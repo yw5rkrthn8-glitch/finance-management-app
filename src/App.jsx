@@ -3,7 +3,7 @@ import * as XLSX from 'xlsx'
 import './App.css'
 
 const STORAGE_KEY = 'finance-management-records'
-const EXCEL_URL = '/FA.xlsx'
+const EXCEL_URL = `${import.meta.env.BASE_URL}FA.xlsx`
 
 function loadRecordsFromStorage() {
   try {
